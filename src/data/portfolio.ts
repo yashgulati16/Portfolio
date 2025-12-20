@@ -48,19 +48,19 @@ export const certifications: Certification[] = [
 export const skillCategories: SkillCategory[] = [
   {
     title: "Programming",
-    skills: ["C", "C++", "Python", "DSA", "OOP"]
+    skills: ["C", "C++", "Python", "DSA", "OOP","DBMS", "Problem Solving"]
   },
   {
     title: "Data Science",
-    skills: ["NumPy", "Pandas", "scikit-learn", "Matplotlib", "NLTK", "EDA", "ML Models"]
+    skills: ["NumPy", "Pandas", "Scikit-Learn", "Matplotlib", "NLTK", "EDA", "ML Models", "ANN","CNN", "DNN"]
   },
   {
     title: "Computer Vision",
-    skills: ["OpenCV", "YOLO", "Object Detection", "Image Processing"]
+    skills: ["OpenCV", "Object Detection", "YOLO", "Image Processing",  "Visual Odometry", "Pillow",  "Video Processing"]
   },
   {
-    title: "Tools & Platforms",
-    skills: ["Jupyter Notebook", "Google Colab", "Linux/Ubuntu", "Git"]
+    title: "Web Development",
+    skills: ["React", "Git", "HTML", "CSS", "JavaScript", ".NET", "SQL Server"]
   }
 ]
 
@@ -70,7 +70,7 @@ export const personalInfo = {
   email: "ygulati84@gmail.com",
   linkedin: "https://linkedin.com/in/yashgulati14",
   youtube: "https://youtube.com/@yashgulati14",
-  title: "Data Science & Computer Vision Enthusiast | ML Developer",
+  title: "Data Science & Computer Vision Enthusiast | Web Developer",
   subtitle: "Final-year B.Tech CSE student passionate about solving problems through data-driven approaches and building intelligent real-world systems."
 }
 
@@ -103,21 +103,33 @@ export const education = [
   }
 ]
 
-export const experience = {
-  position: "Research & Development Intern",
-  company: "Indowings",
-  duration: "Aug 2025 – Sept 2025",
+export const experiences = [
+  {
+    position: "Research & Development Intern",
+    company: "Indowings",
+    duration: "August 2025 – September 2025",
+    responsibilities: [
+      "Applied machine learning and computer vision techniques to drone image datasets, developing and evaluating models in a Linux (Ubuntu) environment.",
+      "Built hands-on expertise in object detection and image-processing pipelines, gaining insight into how computer vision models interpret visual data.",
+      "Collaborated with the R&D team to convert research ideas into functional prototypes for autonomous drone systems."
+    ]
+  },
+  {
+  position: "Software Development Engineer",
+  company: "CG Infinity",
+  duration: "October 2025 – Present",
   responsibilities: [
-    "Applied machine learning and computer vision techniques on drone image data, developing and testing models in a Linux/Ubuntu environment.",
-    "Gained hands-on experience in object detection and image data processing pipelines, learning how visual data is interpreted by CV models.",
-    "Collaborated with the R&D team to translate research concepts into functional prototypes for autonomous drones."
+    "Developing full-stack web applications using React for the frontend, .NET for backend services, and SQL Server (SSMS) for database management.",
+    "Analyzing user and business requirements to design and deliver precise, scalable, and reliable software solutions.",
+    "Solving complex technical problems through debugging, optimization, and continuous improvement of application performance and usability."
   ]
 }
+]
 
 export const competitive = {
   achievements: [
     { medal: "🥇", title: "First Place", description: "Code Hustle (24-hour coding marathon)" },
     { medal: "🥈", title: "Second Place", description: "Code Blaze" },
-    { medal: "⭐", title: "600+ DSA problems", description: "solved on LeetCode" }
+    { medal: "⭐", title: "600+ DSA problems", description: "solved on LeetCode" },
   ]
 }

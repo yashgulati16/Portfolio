@@ -2,7 +2,7 @@ import { certifications } from '../../data/portfolio'
 
 export default function Certifications() {
   return (
-    <section className="section certifications">
+    <section id="certifications" className="section certifications">
       <h2>Certifications</h2>
       <div className="certs-grid">
         {certifications.map((cert, index) => (

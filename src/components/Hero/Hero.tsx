@@ -1,6 +1,6 @@
 import { personalInfo } from '../../data/portfolio'
-import Snowfall from 'react-snowfall'
 import { useState } from 'react'
+import Snowfall from 'react-snowfall'
 
 export default function Hero() {
   const [emailCopied, setEmailCopied] = useState(false)
@@ -19,8 +19,8 @@ export default function Hero() {
   }
 
   return (
-    <section className="hero">
-    <Snowfall />
+    <section id="hero" className="hero">
+      <Snowfall style={{ height:'110vh' }}/>
       <div className="hero-content">
         <h1 className="name">{personalInfo.name}</h1>
         <p className="title">{personalInfo.title}</p>
