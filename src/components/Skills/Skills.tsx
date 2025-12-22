@@ -1,5 +1,6 @@
 import { skillCategories } from '../../data/portfolio'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
+import './Skills.css'
 
 export default function Skills() {
   const sectionRef = useScrollAnimation()

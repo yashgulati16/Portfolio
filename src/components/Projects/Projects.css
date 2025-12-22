@@ -1,0 +1,96 @@
+/* Projects Section */
+.projects {
+  background: linear-gradient(180deg, #0f0f0f 0%, rgba(42, 10, 10, 0.3) 50%, #0f0f0f 100%);
+  box-shadow: inset 0 0 120px rgba(201, 87, 45, 0.1), inset 0 0 80px rgba(212, 146, 30, 0.05);
+  position: relative;
+}
+
+.projects:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #c9572d, transparent);
+  box-shadow: 0 0 20px rgba(201, 87, 45, 0.5);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.project-card {
+  background: linear-gradient(135deg, rgba(42, 42, 42, 0.85) 0%, rgba(30, 10, 10, 0.65) 100%);
+  padding: 2rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(201, 87, 45, 0.2);
+  transition: all 0.3s;
+  box-shadow: 0 4px 15px rgba(201, 87, 45, 0.12), inset 0 0 15px rgba(201, 87, 45, 0.04);
+}
+
+.project-card:hover {
+  box-shadow: 0 12px 40px rgba(201, 87, 45, 0.35), inset 0 0 30px rgba(201, 87, 45, 0.15);
+  transform: translateY(-4px);
+  border-color: rgba(201, 87, 45, 0.5);
+  background: linear-gradient(135deg, rgba(52, 42, 42, 0.9) 0%, rgba(40, 15, 10, 0.75) 100%);
+}
+
+.project-card h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.project-desc {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tech-badge {
+  background: #1a1a1a;
+  color: var(--primary);
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid var(--primary);
+}
+
+.project-link {
+  display: inline-block;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s;
+}
+
+.project-link:hover {
+  transform: translateX(4px);
+}
+
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    padding: 1.5rem 1rem;
+  }
+}

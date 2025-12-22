@@ -1,5 +1,6 @@
 import { projects } from '../../data/portfolio'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
+import './Projects.css'
 
 export default function Projects() {
   const sectionRef = useScrollAnimation()

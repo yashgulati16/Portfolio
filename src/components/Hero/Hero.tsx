@@ -1,8 +1,11 @@
 import { personalInfo } from '../../data/portfolio'
 import { useState } from 'react'
 import Snowfall from 'react-snowfall'
+import { useScrollAnimation } from '../../hooks/useScrollAnimation'
+import './Hero.css'
 
 export default function Hero() {
+  const sectionRef = useScrollAnimation({ animationType: 'down' })
   const [emailCopied, setEmailCopied] = useState(false)
   const [phoneCopied, setPhoneCopied] = useState(false)
 

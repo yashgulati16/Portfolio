@@ -1,0 +1,87 @@
+/* Competitive Coding Section */
+.competitive {
+  background: linear-gradient(180deg, #1a1a1a 0%, rgba(42, 10, 10, 0.35) 50%, #1a1a1a 100%);
+  box-shadow: inset 0 0 100px rgba(201, 87, 45, 0.1), inset 0 0 60px rgba(212, 146, 30, 0.05);
+  position: relative;
+}
+
+.competitive:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #c9572d, transparent);
+  box-shadow: 0 0 20px rgba(201, 87, 45, 0.5);
+}
+
+.competitive-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.achievement {
+  background: #2a2a2a;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  border: 1px solid #333333;
+}
+
+.medal {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.achievement p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+.achievement strong {
+  color: var(--primary);
+}
+
+.achievement-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #ff6b35;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 107, 53, 0.1);
+  border: 1.5px solid #ff6b35;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.achievement-link:hover {
+  color: #ffffff;
+  background: linear-gradient(135deg, #ff6b35, #c9572d);
+  border-color: #c9572d;
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.4);
+}
+
+@media (max-width: 1024px) {
+  .competitive-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .competitive-content {
+    grid-template-columns: 1fr;
+  }
+
+  .achievement {
+    padding: 1.5rem 1rem;
+  }
+}

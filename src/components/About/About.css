@@ -1,0 +1,83 @@
+/* About Section */
+.about {
+  background: linear-gradient(180deg, #0f0f0f 0%, rgba(42, 10, 10, 0.4) 40%, #1a1a1a 100%);
+  box-shadow: inset 0 0 100px rgba(201, 87, 45, 0.12), inset 0 0 60px rgba(212, 146, 30, 0.06);
+  position: relative;
+}
+
+.about:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #c9572d, transparent);
+  box-shadow: 0 0 20px rgba(201, 87, 45, 0.5);
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.about-card {
+  background: linear-gradient(135deg, rgba(42, 42, 42, 0.8) 0%, rgba(30, 10, 10, 0.6) 100%);
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 15px rgba(201, 87, 45, 0.15), 0 8px 30px rgba(201, 87, 45, 0.08), inset 0 0 20px rgba(201, 87, 45, 0.05);
+  border: 1px solid rgba(201, 87, 45, 0.2);
+  transition: all 0.3s;
+}
+
+.about-card:hover {
+  box-shadow: 0 8px 25px rgba(201, 87, 45, 0.25), inset 0 0 30px rgba(201, 87, 45, 0.1);
+  border-color: rgba(201, 87, 45, 0.4);
+}
+
+.about-card h3 {
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.edu-list {
+  list-style: none;
+}
+
+.edu-list li {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.edu-list li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.edu-list strong {
+  color: var(--text-primary);
+}
+
+.edu-list p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-top: 0.3rem;
+}
+
+.summary-text {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+}

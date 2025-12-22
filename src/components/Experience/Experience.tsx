@@ -1,5 +1,6 @@
 import { experiences } from '../../data/portfolio'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
+import './Experience.css'
 
 export default function Experience() {
   const sectionRef = useScrollAnimation()

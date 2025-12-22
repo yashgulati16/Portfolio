@@ -1,5 +1,6 @@
 import { certifications } from '../../data/portfolio'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
+import './Certifications.css'
 
 export default function Certifications() {
   const sectionRef = useScrollAnimation()
