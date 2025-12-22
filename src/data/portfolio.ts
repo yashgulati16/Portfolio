@@ -48,15 +48,15 @@ export const certifications: Certification[] = [
 export const skillCategories: SkillCategory[] = [
   {
     title: "Programming",
-    skills: ["C", "C++", "Python", "DSA", "OOP","DBMS", "Problem Solving"]
+    skills: ["C", "C++", "Python", "DSA", "OOP", "DBMS", "Problem Solving"]
   },
   {
     title: "Data Science",
-    skills: ["NumPy", "Pandas", "Scikit-Learn", "Matplotlib", "NLTK", "EDA", "ML Models", "ANN","CNN", "DNN"]
+    skills: ["NumPy", "Pandas", "Scikit-Learn", "Matplotlib", "NLTK", "EDA", "ML Models", "ANN", "CNN", "DNN"]
   },
   {
     title: "Computer Vision",
-    skills: ["OpenCV", "Object Detection", "YOLO", "Image Processing",  "Visual Odometry", "Pillow",  "Video Processing"]
+    skills: ["OpenCV", "Object Detection", "YOLO", "Image Processing", "Visual Odometry", "Pillow", "Video Processing"]
   },
   {
     title: "Web Development",
@@ -115,15 +115,15 @@ export const experiences = [
     ]
   },
   {
-  position: "Software Development Engineer",
-  company: "CG Infinity",
-  duration: "October 2025 – Present",
-  responsibilities: [
-    "Developing full-stack web applications using React for the frontend, .NET for backend services, and SQL Server (SSMS) for database management.",
-    "Analyzing user and business requirements to design and deliver precise, scalable, and reliable software solutions.",
-    "Solving complex technical problems through debugging, optimization, and continuous improvement of application performance and usability."
-  ]
-}
+    position: "Software Development Engineer",
+    company: "CG Infinity",
+    duration: "October 2025 – Present",
+    responsibilities: [
+      "Developing full-stack web applications using React for the frontend, .NET for backend services, and SQL Server (SSMS) for database management.",
+      "Analyzing user and business requirements to design and deliver precise, scalable, and reliable software solutions.",
+      "Solving complex technical problems through debugging, optimization, and continuous improvement of application performance and usability."
+    ]
+  }
 ]
 
 export const competitive = {
