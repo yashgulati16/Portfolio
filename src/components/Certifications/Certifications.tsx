@@ -6,11 +6,19 @@ export default function Certifications() {
       <h2>Certifications</h2>
       <div className="certs-grid">
         {certifications.map((cert, index) => (
-          <div key={index} className="cert-card">
-            <span className="cert-icon">✓</span>
-            <h4>{cert.title}</h4>
-            <p className="cert-issuer">{cert.issuer}</p>
-          </div>
+          <a
+            key={index}
+            href={cert.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cert-link"
+          >
+            <div className="cert-card">
+              <span className="cert-icon">✓</span>
+              <h4>{cert.title}</h4>
+              <p className="cert-issuer">{cert.issuer}</p>
+            </div>
+          </a>
         ))}
       </div>
     </section>

@@ -21,29 +21,50 @@ export const projects: Project[] = [
     title: "Mindful Metrics: Modeling Attention Span via App Usage",
     description: "Built an ML pipeline to analyze app usage behaviors and model attention span using RandomForest, Gradient Boosting, SVR, and Ridge Regression; derived insights into focus patterns and digital engagement.",
     tech: ["Python", "RandomForest", "Gradient Boosting", "SVR", "Ridge Regression"],
-    link: "#"
+    link: "https://github.com/yashgulati16/Mindful-Metrics-Analyzing-Attention-Span-through-App-Usage.git"
   },
   {
     title: "Automated Legal Assistant - Coal Mines Act",
     description: "Developed an intelligent chatbot aimed at assisting coal mine workers by parsing and responding to legal queries based on Indian mining Acts. The application used a custom-trained NLP model with PyTorch and a Tkinter GUI.",
     tech: ["Python", "PyTorch", "NLP", "Tkinter"],
-    link: "#"
+    link: "https://github.com/yashgulati16/Automated-Legal-Assistant"
   },
   {
     title: "Movie Recommender with TMDb API",
     description: "Built a movie similarity engine using cosine similarity on genre vectors with scikit-learn and Pandas, and integrated TMDb API to deliver real-time top-10 personalized suggestions.",
     tech: ["Python", "scikit-learn", "Pandas", "TMDb API"],
-    link: "#"
+    link: "https://github.com/yashgulati16/MovieRecommendation.git"
   }
 ]
 
 export const certifications: Certification[] = [
-  { title: "Learn C++ Programming - Beginner to Advance", issuer: "Abdul Bari (Udemy)" },
-  { title: "Mastering Data Structures and Algorithms with C/C++", issuer: "Abdul Bari (Udemy)" },
-  { title: "Python for Data Science, AI and Development", issuer: "IBM (Coursera)" },
-  { title: "Data Science Methodology", issuer: "IBM (Coursera)" },
-  { title: "Tools for Data Science", issuer: "IBM (Coursera)" }
+  {
+    title: "Learn C++ Programming - Beginner to Advance",
+    issuer: "Abdul Bari (Udemy)",
+    link: "https://www.udemy.com/certificate/UC-3b250103-8959-44a4-99a6-0bf32f00a63f/"
+  },
+  {
+    title: "Mastering Data Structures and Algorithms with C/C++",
+    issuer: "Abdul Bari (Udemy)",
+    link: "https://www.udemy.com/certificate/UC-fc20f3e2-29d6-4e71-b5e2-a05b85a0c3d4/"
+  },
+  {
+    title: "Python for Data Science, AI and Development",
+    issuer: "IBM (Coursera)",
+    link: "https://www.coursera.org/account/accomplishments/verify/AX5SD7J5WL7X?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"
+  },
+  {
+    title: "Data Science Methodology",
+    issuer: "IBM (Coursera)",
+    link: "https://www.coursera.org/account/accomplishments/verify/T4EQ722XNJAA?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"
+  },
+  {
+    title: "Tools for Data Science",
+    issuer: "IBM (Coursera)",
+    link: "https://www.coursera.org/account/accomplishments/verify/BG8R3SZMJLJ7?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"
+  }
 ]
+
 
 export const skillCategories: SkillCategory[] = [
   {
@@ -128,8 +149,23 @@ export const experiences = [
 
 export const competitive = {
   achievements: [
-    { medal: "🥇", title: "First Place", description: "Code Hustle (24-hour coding marathon)" },
-    { medal: "🥈", title: "Second Place", description: "Code Blaze" },
-    { medal: "⭐", title: "600+ DSA problems", description: "solved on LeetCode" },
+    {
+      medal: "🥇",
+      title: "First Place",
+      description: "Code Hustle (24-hour coding marathon)",
+      link: "https://www.linkedin.com/posts/yashgulati14_codehustle-certificate-activity-7358021957818179585-tJYa?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEJqbzsBzt6SSGAqlC8FyU7IvgtWlfP5lFo"
+    },
+    {
+      medal: "🥈",
+      title: "Second Place",
+      description: "Code Blaze",
+      link: "https://www.linkedin.com/posts/yashgulati14_codeblaze-certificate-activity-7358019318489468932-OS4-?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEJqbzsBzt6SSGAqlC8FyU7IvgtWlfP5lFo"
+    },
+    {
+      medal: "⭐",
+      title: "600+ DSA problems",
+      description: "solved on LeetCode",
+      link: "https://leetcode.com/u/yashgulati14/"
+    },
   ]
-}
+};
