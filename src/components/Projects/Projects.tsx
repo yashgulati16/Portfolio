@@ -1,8 +1,10 @@
 import { projects } from '../../data/portfolio'
+import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 
 export default function Projects() {
+  const sectionRef = useScrollAnimation()
   return (
-    <section id="projects" className="section projects">
+    <section ref={sectionRef} id="projects" className="section projects">
       <h2>Projects</h2>
       <div className="projects-grid">
         {projects.map((project, index) => (

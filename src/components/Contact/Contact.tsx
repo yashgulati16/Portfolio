@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import { personalInfo } from '../../data/portfolio'
+import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 
 export default function Contact() {
+  const sectionRef = useScrollAnimation()
   const [showModal, setShowModal] = useState(false)
   const [formData, setFormData] = useState({
     name: '',
@@ -42,7 +44,7 @@ Organization: ${formData.organization}
 }
 
   return (
-    <footer id="contact" className="footer">
+    <footer ref={sectionRef} id="contact" className="footer">
       <h2>Let's Connect</h2>
 
       <div className="contact-section">

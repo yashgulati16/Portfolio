@@ -1,8 +1,10 @@
 import { experiences } from '../../data/portfolio'
+import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 
 export default function Experience() {
+  const sectionRef = useScrollAnimation()
   return (
-    <section id="experience" className="section experience">
+    <section ref={sectionRef} id="experience" className="section experience">
       <h2>Experience</h2>
 
       {experiences.map((exp, index) => (

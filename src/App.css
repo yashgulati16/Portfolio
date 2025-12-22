@@ -68,7 +68,25 @@ html {
 /* Scroll Animation Classes */
 .scroll-animate {
   opacity: 0;
+  transform: translateY(60px);
+}
+
+.scroll-animate.in-view {
+  opacity: 1;
+  transform: translateY(0);
   animation: slideInUp 0.8s ease-out forwards;
+}
+
+.scroll-animate.left.in-view {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.scroll-animate.right.in-view {
+  animation: slideInRight 0.8s ease-out forwards;
+}
+
+.scroll-animate.down.in-view {
+  animation: slideInDown 0.8s ease-out forwards;
 }
 
 .scroll-animate.in-view {

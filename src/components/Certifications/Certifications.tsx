@@ -1,8 +1,10 @@
 import { certifications } from '../../data/portfolio'
+import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 
 export default function Certifications() {
+  const sectionRef = useScrollAnimation()
   return (
-    <section id="certifications" className="section certifications">
+    <section ref={sectionRef} id="certifications" className="section certifications">
       <h2>Certifications</h2>
       <div className="certs-grid">
         {certifications.map((cert, index) => (

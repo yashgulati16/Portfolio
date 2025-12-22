@@ -1,8 +1,10 @@
 import { competitive } from '../../data/portfolio'
+import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 
 export default function CompetitiveCoding() {
+  const sectionRef = useScrollAnimation()
   return (
-    <section id="competitive" className="section competitive">
+    <section ref={sectionRef} id="competitive" className="section competitive">
       <h2>Competitive Coding</h2>
 
       <div className="competitive-content">

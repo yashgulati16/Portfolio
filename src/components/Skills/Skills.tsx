@@ -1,8 +1,10 @@
 import { skillCategories } from '../../data/portfolio'
+import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 
 export default function Skills() {
+  const sectionRef = useScrollAnimation()
   return (
-    <section id="skills" className="section skills">
+    <section ref={sectionRef} id="skills" className="section skills">
       <h2>Technical Skills</h2>
 
       <div className="skills-layout">

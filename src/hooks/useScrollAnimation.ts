@@ -10,38 +10,42 @@ export const useScrollAnimation = (
   options: ScrollAnimationOptions = {}
 ) => {
   const {
-    threshold = 0.1,
+    threshold = 0.15,
     rootMargin = '0px 0px -100px 0px',
     animationType = 'up',
   } = options;
 
-  const elementRef = useRef<HTMLDivElement>(null);
+  const elementRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('in-view');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold,
-      rootMargin,
-    });
-
     const element = elementRef.current;
-    if (element) {
-      element.classList.add('scroll-animate', animationType);
-      observer.observe(element);
+    if (!element) return;
+
+    // Base animation classes
+    element.classList.add('scroll-animate');
+
+    if (animationType !== 'up') {
+      element.classList.add(animationType);
     }
 
+    const observer = new IntersectionObserver(
+      ([entry], obs) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          obs.unobserve(entry.target); // animate once
+        }
+      },
+      { threshold, rootMargin }
+    );
+
+    observer.observe(element);
+
     return () => {
-      if (element) {
-        observer.unobserve(element);
-      }
+      observer.disconnect();
     };
   }, [threshold, rootMargin, animationType]);
 
   return elementRef;
 };
+
+export default useScrollAnimation;
