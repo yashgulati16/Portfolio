@@ -16,27 +16,30 @@ export default function Contact() {
   }
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+  e.preventDefault()
 
-    const subject = `New Contact from ${formData.name}`
-    const body = `
+  const subject = `New Contact from ${formData.name}`
+  const body = `
 Name: ${formData.name}
 Email: ${formData.email}
 Phone: ${formData.phone}
 Organization: ${formData.organization}
-    `
+  `
 
-    window.location.href = `mailto:${personalInfo.email}?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(body)}`
+  const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${
+    personalInfo.email
+  }&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
 
-    setSubmitted(true) // <-- show thank you message
-    setTimeout(() => {
-      setShowModal(false)
-      setSubmitted(false)
-      setFormData({ name: '', email: '', phone: '', organization: '' })
-    }, 3000) // <-- hide modal after 3 seconds
-  }
+  window.open(gmailLink, '_blank')
+
+  setSubmitted(true)
+
+  setTimeout(() => {
+    setShowModal(false)
+    setSubmitted(false)
+    setFormData({ name: '', email: '', phone: '', organization: '' })
+  }, 3000)
+}
 
   return (
     <footer id="contact" className="footer">
